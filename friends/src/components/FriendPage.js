@@ -35,6 +35,12 @@ function FriendPage() {
         };
         setFriends([...friends, newFriend]);
     };
+   // const editFriend = (freind) => {
+   //    
+  // } 
+   //const deleteFriend = (friend) => {
+   //     
+    //}
 
     return (
         <div className='App'>
