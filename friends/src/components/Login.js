@@ -25,7 +25,7 @@ class Login extends React.Component {
             .post("/api/login", this.state.credentials)
             .then((res) => {
                 window.localStorage.setItem("token", res.data.payload);
-                // navigate the user to /protected (whatever landing page)
+                // navigate to /protected (landing page)
                 this.props.history.push("/friend-page");
             })
             .catch((err) => console.log(err));
@@ -33,7 +33,7 @@ class Login extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="login">
                 <form onSubmit={this.login}>
                     <input
                         type='text'
